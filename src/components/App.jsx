@@ -22,7 +22,7 @@ var App = () => {
           <VideoPlayer currentPlaying={currentPlaying}/>
         </div>
         <div className="col-md-5">
-          <VideoList videos={videos}/>
+          <VideoList videos={videos} setCurrentPlaying={setCurrentPlaying}/>
         </div>
       </div>
     </div>
