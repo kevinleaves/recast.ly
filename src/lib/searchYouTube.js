@@ -6,7 +6,7 @@ $.ajaxPrefilter(function (settings, _, jqXHR) {
 
 // Accept a callback function that is invoked with the videos array that is returned from hitting the endpoint
 
-var searchYouTube = (query, callback = () => {}) => {
+var searchYouTube = (query = 'react', callback = () => {}) => {
   // const server = 'https://app-hrsei-api.herokuapp.com/api/recastly/videos';
   $.ajax({
     url: 'https://app-hrsei-api.herokuapp.com/api/recastly/videos',
